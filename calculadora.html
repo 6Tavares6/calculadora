@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora sinistra</title>
+    <link href = "style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>calculadora muito foda</h1>
+
+    Primeiro numero<br />
+    <input id="n1" type="number" /><br />
+    segundo numero<br />
+    <input id="n2" type="number" /><br />
+<p>  
+<button onclick = "somar()">Somar</button>
+<button onclick = "Dividir()" >Dividir</button> 
+<button onclick = "Multiplicar()">Multiplicar</button>
+<button onclick = "Subtrair()" >Subtrair</button>
+<br /><br />    
+</p>  
+
+<br />
+    O resultado dessa brincadeira eh <span></span>
+
+    <script>
+    var n1 = document.querySelector('#n1')
+    var n2 = document.querySelector('#n2')
+    var resultado = document.querySelector ('span')
+
+    function somar() {
+      resultado.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+    }
+    
+    function Multiplicar() {
+      resultado.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+    }
+    
+    function Subtrair() {
+      resultado.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+    }
+    
+    function Dividir() {
+      resultado.innerHTML = parseInt(n1.value) / parseInt(n2.value)
+    }
+    
+
+    </script>
+
+
+</body>
+</html>
